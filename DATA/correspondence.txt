@@ -1,0 +1,6 @@
+Wombat info: wombat-info@nationalzoo.au
+Guido Van Rossum: gvr@python.org
+Robert Smith: bob.smith@wherever.com
+Just Some Guy: bad-guy@up.to.no.good.com
+Support for US DOT: user_support@data.dot.gov
+Misc: spam@python.org  ham@porkheaven.com
