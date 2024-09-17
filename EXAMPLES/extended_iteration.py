@@ -2,13 +2,14 @@
 from itertools import chain, takewhile, dropwhile
 
 spam = ['alpha', 'beta', 'gamma']
-ham = ['delta', 'epsilon', 'zeta']
+ham = 'delta', 'epsilon', 'zeta'
+toast = "abc"
 
-for letter in chain(spam, ham):  # treat spam and ham as a single iterable
+for letter in chain(spam, ham, toast):  # treat spam and ham as a single iterable
     print(letter, end=' ')
 print("\n")
 
-eggs = [spam, ham]
+eggs = [spam, ham, toast]
 
 for letter in chain.from_iterable(eggs):  # treat all elements of eggs as a single iterable
     print(letter, end=' ')
