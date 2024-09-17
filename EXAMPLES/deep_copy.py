@@ -28,3 +28,6 @@ print("id(d1[0]):", id(d1[0]))
 print("id(d2[0]):", id(d2[0]))
 print("id(d3[0]):", id(d3[0]))
 
+print(f"{data is d1 = }")
+
+print(f"{data is d1 = }")

@@ -26,10 +26,10 @@ print("BEFORE:")
 pprint(data)
 print('-' * 60)
 
-
-
-with open('../TEMP/pickled_data.pkl', 'wb') as pkl_out:  # open pickle file for writing in binary mode
+with open('../TEMP/pickled_data.pkl', mode='wb') as pkl_out:  # open pickle file for writing in binary mode
     pickle.dump(data, pkl_out)  # serialize data structures to pickle file
+
+saved_data = pickle.dumps(data)
 
 with open('../TEMP/pickled_data.pkl', 'rb') as pkl_in:  # open pickle file for reading in binary mode
     pickled_data = pickle.load(pkl_in)  # de-serialize pickle file back into data structures
