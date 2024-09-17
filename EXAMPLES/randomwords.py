@@ -28,4 +28,5 @@ class RandomWords():
 if __name__ == '__main__':
     w = RandomWords()
     print(w())
+    print(w())
     print(w.random_words(8))
