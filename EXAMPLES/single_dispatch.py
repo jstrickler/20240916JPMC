@@ -43,15 +43,15 @@ def _(number, list_object): # define handler for str and bytes
 
 
 def _has_dot(n):
-    if isinstance(n, str) and '.' in n:
-        return True
+    if isinstance(n, str):
+        return '.' in n
     elif isinstance(n, bytes) and b'.' in n:
         return True
     else:
         return False
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":   # only if this file directly passed to python.exe, NOT imported
     print('-' * 60)
     x = [1, 2, 3]
     add_number(10, x)

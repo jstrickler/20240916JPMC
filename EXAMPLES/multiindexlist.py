@@ -24,7 +24,7 @@ if __name__ == '__main__':
     m.append('mango')
     print(m)
 
-    print(f"m[0]: {m[0]}")  # normal indexing
+    print(f"m[0]: {m[0]}")  # normal indexing   MultiIndexList.__getitem__(m, 0)
     print(f"m[5, 2, 0]: {m[5, 2, 0]}")  # multi-index with tuple
     print(f"m[:4]: {m[:4]}")  # normal slice
     print(f"len(m): {len(m)}")  # len() works normally

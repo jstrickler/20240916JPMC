@@ -13,3 +13,8 @@ p2 = Person("John", "Smith", 47)
 
 print(f"{p1 = }")
 print(f"{p2 = }")
+
+p2.first_name = "Mary"
+
+print(f"{p2 = }")
+
