@@ -4,10 +4,11 @@ def void(thing_being_decorated):
 
 name = "Guido"
 x = void(name)  # decorate 'name', which is now 42, not a string
+print(x, type(x))
 
 @void  # decorate hello() function
 def hello():
-    print("Hello, world")
+    print("Hello, world")   #  hello = void(hello)
 
 @void  # decorate howdy() function
 def howdy():
@@ -15,4 +16,10 @@ def howdy():
 
 print(hello, type(hello)) # hello is now the integer 42, not a function
 print(howdy, type(howdy)) # howdy is now the integer 42, not a function
-print(x, type(x))
+
+# @void
+def greetings():
+    print("Greetings, world")
+
+greetings = void(greetings)
+print(greetings, type(greetings))

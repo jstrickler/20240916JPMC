@@ -15,6 +15,8 @@ dates = [
     (1927, 12, 7),
 ]  # tuple of dates
 
+# for year, month, day in dates
+#   d = date(year, month, day)
 for dt in dates:
     d = date(*dt)  # instead of date(dt[0], dt[1], dt[2])
     print(d)

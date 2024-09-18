@@ -14,9 +14,9 @@ class TrimmedFile:
         else:
             return line.rstrip('\n\r')  # The actual work of this iterator -- remove the end-of-line char(s)
 
-
 if __name__ == '__main__':
     # To use the iterator, create an instance and iterate over it.
     trimmed = TrimmedFile('../DATA/mary.txt')  
+    print("First line:", next(trimmed))
     for line in trimmed:
         print(line)
