@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 import csv
 from presidentdc import President
 

@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 import csv
 from presidentdc import President
 
@@ -11,4 +10,4 @@ def iter_presidents():
             yield President(*row)
 
 for president in iter_presidents():
-    print(president.first_name, president.last_name, "==>", president.party)
+    print(president.first_name, president.last_name, president.party)
