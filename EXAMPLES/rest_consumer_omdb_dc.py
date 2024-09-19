@@ -19,6 +19,7 @@ MOVIE_TITLES = [
 def main():
     with requests.Session() as session:
         session.params.update({"apikey": OMDB_API_KEY})
+        movies = []
         for movie_title in MOVIE_TITLES:
             params = {'t': movie_title}
             response = session.get(OMDB_URL, params=params)
@@ -27,7 +28,10 @@ def main():
                 keys = raw_data.keys()
                 Movie = make_dataclass("movie", keys)
                 m = Movie(*raw_data.values())
-                print(m.Title, m.Year)
-            
+                movies.append(m)
+    
+    for movie in movies:
+        if hasattr(movie, 'Title') and hasattr(movie('Year')):
+            print(movie.Title, movie.Year)
 if __name__ == '__main__':
     main()

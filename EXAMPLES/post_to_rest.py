@@ -8,7 +8,7 @@ for i in range(3):
     response = requests.post(  # POST data to server
         URL,
         data={'date': datetime.now(),
-            'label': 'test_' + str(i)
+            'label': 'test_' + str(i)  # f"test_{i}"
         },
         cookies={'python': 'testing'},
         headers={'X-Python': 'Guido van Rossum'},

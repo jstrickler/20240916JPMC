@@ -1,7 +1,10 @@
-
 from threading import Thread, Lock
 import random
 import time
+
+# with open('myfile.txt') as my_in:
+#     pass
+
 
 STDOUT_LOCK = Lock()
 

@@ -1,4 +1,3 @@
-from multiprocessing.dummy import Pool
 import requests
 
 APOD_URL = "https://api.nasa.gov/planetary/apod"

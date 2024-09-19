@@ -3,7 +3,7 @@ import queue
 from threading import Thread, Lock as tlock
 import time
 
-NUM_ITEMS = 30000
+NUM_ITEMS = 150000
 POOL_SIZE = 128
 
 word_queue = queue.Queue(0)  # initialize empty queue

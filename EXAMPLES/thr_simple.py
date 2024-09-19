@@ -5,6 +5,8 @@ import time
 
 STDOUT_LOCK = Lock()
 
+my_data = []
+
 class SimpleThread(Thread):
     def __init__(self, num):
         super().__init__()  # call base class constructor -- REQUIRED
@@ -20,3 +22,4 @@ for i in range(16):
     t = SimpleThread(i)  # create the thread
     t.start()  # launch the thread
 
+print("Done.")
